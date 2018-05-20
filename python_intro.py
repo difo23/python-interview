@@ -1,4 +1,8 @@
+
+# Los comentarios en Python inician con #
+
 print("Bienvenidos")
+
 intento= input("Adivina el numero: ")
 adivinaIntento = int(intento)
 
