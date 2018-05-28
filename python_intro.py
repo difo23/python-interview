@@ -1,5 +1,5 @@
 
-# Los comentarios en Python inician con #
+# Los comentarios en Python inician con 
 
 print("Bienvenidos")
 
