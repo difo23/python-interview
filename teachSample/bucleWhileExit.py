@@ -5,9 +5,9 @@ intentosCorrectos = 0
 intentosIncorrectos = 0
 passwordInt = 1
 
-print("Adivina el numero 0-100")
+print("Adivina el numero 0-100, intentos 5 de 5")
 
-while True:
+while True and intentosCorrectos < 5 and intentosIncorrectos < 5:
     
     numero = input("introduce el numero:")
     numeroInt = int(numero)
@@ -16,7 +16,7 @@ while True:
         intentosCorrectos +=1
         print("Es correcto %d. Cambio el numero \n" %numeroInt)
         adivina = randrange(100)
-        continue
+
     elif passwordInt == 0:
         exit()
     else:
@@ -31,5 +31,8 @@ while True:
     password = input("Quieres salir despues de un ultimo intento?introduce  0 sino intoduce 1:")
     passwordInt = int(password)
     
-
+if intentosCorrectos > intentosIncorrectos:
+    print("Ganas!")
+else:
+    print("Pierdes no tienes mas intentos!")
 
