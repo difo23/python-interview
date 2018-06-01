@@ -14,7 +14,7 @@ while True:
  
     if numeroInt == adivina:
         intentosCorrectos +=1
-        print("Cambio el numero \n")
+        print("Es correcto %d. Cambio el numero \n" %numeroInt)
         adivina = randrange(100)
         continue
     elif passwordInt == 0:
@@ -28,7 +28,7 @@ while True:
 
     print("Intentos correctos %d intentos incorrectos %d vuelve a tratar . \n" %(intentosCorrectos, intentosIncorrectos))
 
-    password = input("Quieres salir despues de un ultimo intento?introduce la palabra 0 sino intoduce 1:")
+    password = input("Quieres salir despues de un ultimo intento?introduce  0 sino intoduce 1:")
     passwordInt = int(password)
     
 
