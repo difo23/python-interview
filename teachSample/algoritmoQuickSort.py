@@ -4,7 +4,7 @@ from time import time
 Genero 5000 datos de prueba entre 0 1000 aleatoriamente.
 """
 datosPrueba= []
-for valor in range(5000):
+for valor in range(50000):
     datosPrueba.append(randrange(1000))  
 
 #print(datosPrueba)
