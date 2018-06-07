@@ -4,9 +4,12 @@ from time import time
 """
 Genero 50 datos de prueba entre 0 1000 aleatoriamente.
 """
-datosPrueba= []
-for valor in range(50000):
-    datosPrueba.append(randrange(1000))
+datosPrueba = [16,14,10,8,7,9,3,2,4,1]
+# datosPrueba= []
+# for valor in range(50000):
+#     datosPrueba.append(randrange(1000))
+
+#Este algoritmo es en el peor de los caso : O(n^2)
 
 def insertion_sort(l):
     for i in xrange(1, len(l)):
@@ -16,11 +19,12 @@ def insertion_sort(l):
            l[j+1] = l[j]
            j -= 1
         l[j+1] = key
-
-
-print "Inicio Prueba de tiempo para 5000 datos en insertion_sort:\n"
+    return l
+    
+print "Inicio Prueba de tiempo para 10 datos en insertion_sort:\n"
 start = time()
-# print(insertion_sort(datosPrueba))
-insertion_sort(datosPrueba)
+print(datosPrueba)
+print(insertion_sort(datosPrueba))
+# insertion_sort(datosPrueba)
 end = time()
 print end-start
