@@ -5,11 +5,11 @@ from time import time
 """
 Genero 50 datos de prueba entre 0 1000 aleatoriamente.
 """
-
-datosPrueba= []
-for valor in range(50000):
-    datosPrueba.append(randrange(1000))
-
+datosPrueba = [16,14,10,8,7,9,3,2,4,1]
+#datosPrueba= []
+#for valor in range(100):
+ #   datosPrueba.append(randrange(1000))
+#Este algoritmo es en todos los casos: O(nlogn)
 # print(datosPrueba)
 
 
@@ -40,7 +40,7 @@ def siftdown(lst, start, end):
 
 
 
-print "Inicio Prueba de tiempo para 5000 datos en heapSort:\n"
+print "Inicio Prueba de tiempo para 10 datos en heapSort:\n"
 start = time()
 # print(heapSort(datosPrueba))
 heapSort(datosPrueba)
