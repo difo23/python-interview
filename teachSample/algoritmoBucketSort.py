@@ -46,14 +46,18 @@ def partition(seq):
     hi = [x for x in seq if x > pi]
     return lo, pi, hi
 
-print( "Inicio Prueba de tiempo para 10 datos en quicksort:\n")
+
+print "Inicio Prueba de tiempo para 10 datos en quicksort:\n"
+
 start = time()
 #print(quicksort(datosPrueba))
 quicksort(datosPrueba)
 end = time()
 print (end-start)
 
-print( "Inicio Prueba de tiempo para 10 datos en bucket_sort:\n")
+
+print "Inicio Prueba de tiempo para 10 datos en bucket_sort:\n"
+
 start = time()
 #print(bucket_sort(datosPrueba))
 bucket_sort(datosPrueba)
