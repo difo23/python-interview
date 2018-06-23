@@ -19,5 +19,56 @@ def longitud(pulgadas):
     print("Las pulgadas que te sobran son: %d" %pulgadas)
 
 
+def cantidad(pesos):
+    cientos = 0 # una yarda tiene 36 pulgadas
+    cincuenta = 0 # un pie tiene 12 pulgadas
+    veinte= 0
+    cinco= 0
+    print("Introduciste %d pesos y te devolvemos:" %pesos)
+    while pesos >= 100:
+        cientos  += 1
+        pesos -= 100
 
-longitud(65)
+    while pesos >= 50:
+        cincuenta  += 1
+        pesos -= 50
+
+    while pesos >= 20:
+        veinte += 1
+        pesos -= 20
+
+    while pesos >= 5:
+        cinco += 1
+        pesos -= 5
+    
+    print(" %d Billetes de 100, %d billetes de 50, %d billetes de 20, %d billetes de 5 y %d pesos " %(cientos, cincuenta, veinte, cinco, pesos))
+
+
+
+def cantidad2(pesos):
+    cientos = 0 # una yarda tiene 36 pulgadas
+    cincuenta = 0 # un pie tiene 12 pulgadas
+    veinte= 0
+    cinco= 0
+    print("Introduciste %d pesos y te devolvemos:" %pesos)
+    if pesos >= 100:
+        cientos = pesos//100
+        pesos -= cientos*100
+
+    if  pesos >= 50:
+        cincuenta = pesos//50
+        pesos -= cincuenta*50
+
+    if pesos >= 20:
+        veinte = pesos//20
+        pesos -= veinte*20
+
+    if pesos >= 5:
+        cinco =pesos//5
+        pesos -= cinco*5
+    
+    print(" %d Billetes de 100, %d billetes de 50, %d billetes de 20, %d billetes de 5 y %d pesos " %(cientos, cincuenta, veinte, cinco, pesos))
+
+
+cantidad2(13577)
+#longitud(65)

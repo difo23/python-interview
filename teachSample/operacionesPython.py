@@ -1,5 +1,9 @@
+for i in range(10):
+    if not i % 2 == 0:
+   	    print(i+1)
+
 print(((3**4)+(35//4))/8%6) #5.125
-print((3**2) and (36//4) or (5/6)) # 9 
+print((4**2) and (0) or (20//5)) # 4.0
 
 #Nota esta operacion resulta interesante y deben estudiarla para entenderla:
 

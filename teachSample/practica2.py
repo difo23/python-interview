@@ -33,4 +33,7 @@ for valor in range (0, n):
     else:
         impar+=1
 
+print("Los numeros introducidos fueron")
+print(numeros)
+
 print("Ha escrito %d numeros pares y %d numeros impares" %(par, impar))
