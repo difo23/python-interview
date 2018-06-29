@@ -7,5 +7,9 @@
         "-p",
         "test*.py"
     ],
-    "python.unitTest.unittestEnabled": true
+    "python.unitTest.unittestEnabled": false,
+    "python.pythonPath": "${workspaceFolder}/venv/bin/python",
+    "python.unitTest.promptToConfigure": false,
+    "python.unitTest.pyTestEnabled": false,
+    "python.unitTest.nosetestsEnabled": false
 }
