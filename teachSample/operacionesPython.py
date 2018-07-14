@@ -3,7 +3,7 @@ for i in range(10):
    	    print(i+1)
 
 print(((3**4)+(35//4))/8%6) #5.125
-print((4**2) and (0) or (20//5)) # 4.0
+print((4**2) and (0) or (20//5)) # 4
 
 #Nota esta operacion resulta interesante y deben estudiarla para entenderla:
 

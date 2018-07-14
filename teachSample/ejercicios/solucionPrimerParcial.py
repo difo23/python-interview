@@ -13,11 +13,10 @@ print(res)
 # Respuesta res=6
 
 #       0  1  2  3  4  5   6
-list = [1, 1, 2, 3, 5, 8, 13] # Es importante ver los indices del arreglo  
-print(list[list[4]]) # list[4] = devuelve el valor 5; con el valor devuelto list[5] = valor devuelto 8
+list = [1, 1, 6, 3, 5, 8, 4] # Es importante ver los indices del arreglo  
+print(list[list[list[2]]]) # list[4] = devuelve el valor 5; con el valor devuelto list[5] = valor devuelto 8
 
 #Respuesta res = 8
-
 
 for i in range(10): # La variable i cambiara de valor 0,1,2,3,4,5,6,7,8,9
     if not i % 2 == 0: # la condicion i%2==0 sera true para los numeros pares, not negara esto haciendo que el el if vea un false cuando esto ocurra, es decir solo sera verdad para los numeros impares.
@@ -90,7 +89,7 @@ print("La cantidad de numeros primos introducidos es: %d" %contadorPrimos)
 def cdig(n):
     numeroStr = str(n)
     contadorPares = 0 
-    contadorImpares = 0
+    contadorImpares = 0 6234 6 2 3 4
     for numerochar in numeroStr:
         print(numerochar)
         numero = int(numerochar)
